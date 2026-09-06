@@ -1,56 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bottom-Navigation-Ber added</title>
     <style>
-        body{
+        body {
             margin: 0;
             padding: 0;
         }
-        .bottom-navigation-bar{
-            background-color: #ffa64d;
-        
 
-           position: fixed;
-           bottom: 0;
-           width: 100%;
-        
-           
+        .bottom-navigation-bar {
+            background-color: #ffd1b3;
+
+
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+
+
+
         }
 
+        .menu-items {
+            border: 1px solid #ff751a;
+            border-radius: 5px;
+            height: 70px;
+            width: 70px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            background-color: #ffa366;
+
+
+        }
+
+        .menu-icons {
+            font-size: 40px;
+
+        }
+
+        .menu-text {
+            font-size: 22px;
+
+            margin-top: 5;
+        }
+
+        @media screen and (max-width:500px) {
+            .menu-items {
+                height: 40px;
+                width: 40px;
+
+            }
+
+            .menu-icons {
+                font-size: 30px;
+            }
+
+            .menu-text {
+                display: none;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="bottom-navigation-bar">
-        <div>
-        <i class="fa-solid fa-qrcode"></i>
-        <span>Scan</span>
+        <div class="menu-items">
+            <i class="fa-solid fa-qrcode  menu-icons"></i>
+            <span class="menu-text">Scan</span>
         </div>
 
-        <div>
-       <i class="fa-solid fa-house"></i>
-       <scan>Home</scan>
-       </div>
+        <div class="menu-items">
+            <i class="fa-solid fa-house   menu-icons"></i>
+            <scan class="menu-text">Home</scan>
+        </div>
 
-       <div>
-       <i class="fa-solid fa-magnifying-glass"></i>
-       <scan>Search</scan>
-       </div>
-       <div>
-       <i class="fa-solid fa-cart-shopping"></i>
-       <scan>Cart</scan>
-       </div>
+        <div class="menu-items">
+            <i class="fa-solid fa-magnifying-glass   menu-icons"></i>
+            <scan class="menu-text">Search</scan>
+        </div>
 
-       <div>
-       <i class="fa-solid fa-circle-question"></i>
-       <scan>Help</scan>
-       </div>
+        <div class="menu-items">
+            <i class="fa-solid fa-cart-shopping   menu-icons"></i>
+            <scan class="menu-text">Cart</scan>
+        </div>
+
+        <div class="menu-items">
+            <i class="fa-solid fa-circle-question   menu-icons"></i>
+            <scan class="menu-text">Help</scan>
+        </div>
 
     </div>
 
     <script src="https://kit.fontawesome.com/ea1b6ff3d9.js" crossorigin="anonymous"></script>
-    
+
 </body>
+
 </html>
