@@ -1,14 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>img-box</title>
-<div class="img-container">
-    <img src="https://i.ndtvimg.com/i/2017-05/dangal_640x480_81494491062.jpg" />
-</div>
+    <title>Movie Card</title>
 </head>
-<body>
+<style>
+    .card {
+        background-color: black;
+        height: 550px;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        position: relative;
+    }
+
+    .img {
+        height: 400px;
+        width: 350px;
+    }
+
+    .text {
+        color: white;
+        margin-left: 10px;
+    }
+
+    .year-text {
+        color: orange;
+    }
+
+    .card-content {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .a {
+        color: orange;
+    }
+    .category{
+     position: absolute;
+     top:10px;
+     left:10px;
+     background-color: orange;
+     padding: 5px 10px;
+     border-radius: 20px;
+     font-size: 15px;
+    }
+    .cross{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+    color: red;
+
+    }
+</style>
+
+<body>
+    <div class="card">
+        <img src=" https://i.ndtvimg.com/i/2017-05/dangal_640x480_81494491062.jpg" class="img" />
+        <div class="category">Biography/Sport</div>
+        <div class="cross">
+            <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <p class="text">A father trains his daughters to become world-class wrestlers.</p>
+        <span class="text"><i class="fa-solid fa-clapperboard"></i> Directors: Nitesh Tiwari</span>
+        <div class="card-content">
+            <p>
+                <i class="fa-solid fa-star a"></i>
+                <i class="fa-solid fa-star a"></i>
+                <i class="fa-solid fa-star a"></i>
+                <i class="fa-solid fa-star a"></i>
+                <i class="fa-solid fa-star a"></i>
+            </p>
+            <p class="year-text">2016</p>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/ea1b6ff3d9.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
