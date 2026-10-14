@@ -7,15 +7,55 @@
     <style>
         .main-img {
             height: 400px;
-            width: 600px
-        }
+            width: 600px;
+            border-radius: 5px 10px;
+            border: 1px solid gray;
+            margin: 5px 10px;
+             }
         .small-img{
             height: 100px;
             width: 130px;
+            border-radius: 5px;
+            border: 1px solid grey;
+            margin:5px 10px; 
         }
+        .container{
+            height: 515px;
+            width: 600px;
+            background-color: #1f1f2e;
+            border-radius: 5px;
+            position: relative;
+        }
+        .heading{
+            color: #ff704d;
+            margin: 30px;
+        }
+        .main-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+      
+        .category {
+        position: absolute;
+        top: 70px;
+        left: 30px;
+        background-color: orange;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .paragraph{
+        margin:60px 30px;
+        color: #d9d9d9;
+        font-size: 15px;
+    }
     </style>
 </head>
 <body>
+    <div class="main-container">
     <div>
         <img src="https://cdn1.marathistars.com/wp-content/uploads/2015/11/Natsamrat-Marathi-Movie.jpg" alt="Natsamrat" class="main-img"/>
         <div>
@@ -25,6 +65,15 @@
        
         <img src="https://d32qys9a6wm9no.cloudfront.net/images/movies/backdrop/fb/264da6b87fe4401f3a5b60e1fa50aaba_1280x720.jpg?t=1647245708" class="small-img"/>
          </div>
+    </div>
+    <div class="container">
+     <h1 class="heading">Natsamrat</h1>
+     <div class="category">Drama/Family</div>
+     <div class="paragraph">
+        Natasamrat (transl. The King of Theater or The Emperor of Actors) is a 2016 Indian Marathi-language drama film starring Nana Patekar in the leading role. Based on a play of the same name written by playwright Kusumagraj, the film depicts the tragic family life of a stage actor who has retired from acting but is unable to forget his fond memories of theatre and the stage.
+     </div>
+    </div>
+
     </div>
     
 </body>
