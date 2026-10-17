@@ -29,6 +29,7 @@
         .heading{
             color: #ff704d;
             margin: 30px;
+            position: absolute;
         }
         .main-container{
             display: flex;
@@ -36,23 +37,46 @@
             align-items: center;
             margin-top: 50px;
         }
-      
-        .category {
-        position: absolute;
-        top: 70px;
-        left: 30px;
-        background-color: orange;
-        padding: 5px 10px;
-        border-radius: 20px;
-        font-size: 15px;
-        margin-top: 15px;
-    }
-    .paragraph{
-        margin:60px 30px;
-        color: #d9d9d9;
-        font-size: 15px;
-    }
-    </style>
+        .btn{
+            position: absolute;
+            right: 25px;
+            color: white;
+            border-radius: 20px;
+            padding: 4px 20px;
+            border: 1px solid gray;
+          }
+          .box{
+            position: absolute;
+            margin-top: 80px;
+            left: 30px;
+            border-radius: 20px;
+            padding: 5px 15px;
+            background-color: #ffcc00;
+            border: 1px solid gray;
+          }
+          .text-container{
+            position: absolute;
+            margin-top: 120px;
+            left: 30px;
+            color: white;
+            width: 540px;
+        }
+        .text{
+            margin-top: 230px;
+           margin-left: 28px;
+            color: #b3b3b3;
+        }
+        .s-text{
+            margin: 15px;
+            margin-left: 28px;
+            color: #b3b3b3;
+        }
+        .icon{
+            color: #ffcc00;
+            margin-left: 30px;
+            font-size:25px;
+        }
+        </style>
 </head>
 <body>
     <div class="main-container">
@@ -66,12 +90,16 @@
         <img src="https://d32qys9a6wm9no.cloudfront.net/images/movies/backdrop/fb/264da6b87fe4401f3a5b60e1fa50aaba_1280x720.jpg?t=1647245708" class="small-img"/>
          </div>
     </div>
+
     <div class="container">
-     <h1 class="heading">Natsamrat</h1>
-     <div class="category">Drama/Family</div>
-     <div class="paragraph">
-        Natasamrat (transl. The King of Theater or The Emperor of Actors) is a 2016 Indian Marathi-language drama film starring Nana Patekar in the leading role. Based on a play of the same name written by playwright Kusumagraj, the film depicts the tragic family life of a stage actor who has retired from acting but is unable to forget his fond memories of theatre and the stage.
-     </div>
+       <h1 class="heading">Natsamrat</h1>
+       <h3 class="btn">Edit</h3>
+       <div class="box">Drama/Family</div>
+       <div class="text-container">Natasamrat (transl. The King of Theater or The Emperor of Actors) is a 2016 Indian Marathi-language drama film starring Nana Patekar in the leading role. Based on a play of the same name written by playwright Kusumagraj, the film depicts the tragic family life of a stage actor who has retired from acting but is unable to forget his fond memories of theatre and the stage.</div>
+       <div class="text">🎬 Directed by: Mahesh Manjrekar & Satish Padwal</div>
+       <div class="s-text">📅 Release Year: 2016</div>
+       <div class="icon">★★★★★</div>
+    
     </div>
 
     </div>
