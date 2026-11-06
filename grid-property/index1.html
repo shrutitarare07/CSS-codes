@@ -38,6 +38,18 @@
             grid-area: Footer;
             padding: 10px;
         }
+        @media(max-width:575px) {
+            .container{
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "Header"
+                    "Sidebar"
+                    "Content"
+                    "Footer";
+            }
+            
+        }
+
     </style>
 </head>
 <body>
